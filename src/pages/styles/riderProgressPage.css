@@ -1,0 +1,85 @@
+.RiderProgressPageHeader {
+    text-align: center;
+}
+
+.RiderProgressPage .jumbotron {
+    background-color: black;
+    text-shadow: -1px -1px 0 goldenrod, 1px -1px 0 goldenrod, -1px 1px 0 goldenrod, 1px 1px 0 goldenrod;
+    color: black;
+}
+
+
+.RiderProgressPage .RiderDetails {
+    text-align: center;
+}
+
+.RiderProgressPage .RiderDetails .Details .DetailContainer {
+    padding: 5%;
+}
+
+.RiderProgressPage .RiderDetails .Details .DetailContainer .DetailLabel {
+    font-weight: 700;
+    font-size: large;
+    width: 100%;
+}
+
+.RiderProgressPage .spinner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
+
+.RiderProgressPage .RiderProgressPageCenter {
+    text-align: center;
+}
+
+.RiderProgressPage .RiderProgressPageCenter table{
+    width: 100%;
+}
+
+.RiderProgressPage .RiderProgressPageCenter button {
+    color: white;
+    background-color: goldenrod;
+    border-color: goldenrod;
+}
+
+.RiderProgressPage .RiderProgressPageCenter .driverArrived  button {
+    color: black;
+    background-color: red;
+    border-color: red;
+}
+
+.RiderProgressPage .progressBarContainer {
+    width: 75%;
+    margin: auto;
+    height: 2em;
+}
+
+.RiderProgressPage .summaryContainer {
+    text-align: center;
+    padding-top: 2em;
+    font-size: large;
+}
+
+.RiderProgressPage .summaryContainer{
+    padding-top: 1em;
+}
+
+.RiderProgressPage .summaryContainer, .amountPaidContainer {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.RiderProgressPage .backToLoginButtonContainer button{
+    color: white;
+    background-color: goldenrod;
+    border-color: goldenrod;
+}
+
+.RiderProgressPage .cancelButtonContainer button {
+    color: white;
+    background-color: black;
+    border-color: black;
+    margin-top: 2em;
+}
