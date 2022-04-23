@@ -32,7 +32,7 @@ function __blockifyCoords(loc){
  */
 async function initBlockchain(portNumber, contractAddress, abiInterface) {
     web3 = new Web3(new Web3.providers.WebsocketProvider("ws://192.168.0.16:"+portNumber));
-
+    contractAddress =''
     contract = new web3.eth.Contract(abiInterface);
     contract.options.address = contractAddress;
 
