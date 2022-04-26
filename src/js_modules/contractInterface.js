@@ -31,8 +31,8 @@ function __blockifyCoords(loc){
  * @param {Object} abiFile          Object containing the abi
  */
 async function initBlockchain(portNumber, contractAddress, abiInterface) {
-    web3 = new Web3(new Web3.providers.WebsocketProvider("ws://192.168.0.16:"+portNumber));
-    contractAddress =''
+    web3 = new Web3(new Web3.providers.WebsocketProvider("ws://127.0.0.1:7545"));
+    // contractAddress ='0x36e8aae75e9b7bc2114e78AD7c43C570B624fF49'
     contract = new web3.eth.Contract(abiInterface);
     contract.options.address = contractAddress;
 
