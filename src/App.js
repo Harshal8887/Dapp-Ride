@@ -97,7 +97,7 @@ class App extends Component {
   //              Submissions
   /////////////////////////////////////////////////////////////////////////
   async onLandingPageSubmit(payload) {
-    const isRiderPage = payload.role == 'rider';
+    const isRiderPage = payload.role === 'rider';
     if (!isRiderPage && !NO_BLOCKCHAIN_DEV){
       console.log('Setting driver')
       const startTime = new Date().getTime(); // ms
@@ -112,11 +112,12 @@ class App extends Component {
       isRiderPage,
       isDriverPage: !isRiderPage,
       role: payload.role
-    });
-  }
+    });  
+  } 
+
 
   async onRiderPageSubmit(payload){
-    const isContinuing = payload.requestType == 'request';
+    const isContinuing = payload.requestType === 'request';
 
     let riderNumber = null;
     if (isContinuing && !NO_BLOCKCHAIN_DEV){
